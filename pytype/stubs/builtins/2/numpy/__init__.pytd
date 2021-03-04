@@ -178,4 +178,9 @@ def asarray(a: Any,
             order: Optional[str] = ...) -> ndarray: ...
 
 
+def reshape(a: Any,
+            newshape: Tuple[int, ...],
+            order: str = ...) -> ndarray: ...
+
+
 def __getattr__(name) -> Any: ...
